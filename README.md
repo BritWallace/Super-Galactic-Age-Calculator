@@ -1,12 +1,12 @@
-# _{Application name here}_
+# _Super Galactic Age Calculator_
 
-#### By _**{List of contributors}**_
+#### By _**Brit Wallace**_
 
-#### _{Brief description of application}_
+#### _An Epicodus Project_
 
 ## Github Pages Link
 
-[TITLE HERE Github Pages](https://patrick-dolan.github.io/APPLICATIONNAMEHERE/)
+[TITLE HERE Github Pages](https://Brit-Wallace.github.io/APPLICATIONNAMEHERE/)
 
 ## Technologies Used
 
@@ -16,30 +16,21 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This application will allow a user to input their age and get their age in several different solar years in return.  If they have lived past the average life expectancy, then it will return how many years they have surpassed that average age. 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone the repository, then go ahead and open the index.html in your browser.
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
 * _Any known issues_
-* _should go here_
 
-## Contact Me
-
-_Let me know if you run into any issues or have questions, ideas or concerns:_
-_[Author Email Here]_
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Feel free to reach out with any questions, comments, or concerns. Email me at britwallace888@gmail.com 
 
-Copyright (c) _date_ _author name(s)_
+
+Copyright (c) _December-27-2021_ _Brit Wallace_
