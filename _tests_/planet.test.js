@@ -14,10 +14,22 @@ describe('Human', () => {
     expect(reusableHuman.age).toEqual(20);
     expect(reusableHuman.gender).toEqual('female');
 
+  test('should determine if the user inputs a positive number', () => {
+    expect(reusableHuman.age).filter(num => num > 1 && num % parseInt(num) === 1);
+  });
+
   }); 
 });
 
+// describe('Human', () => {
+//   let age = age => 1;
+// test('should determine if the user inputs a positive number', () => {
+//   expect(reusableHuman.age).Math.sign(3)
+// });
+// }
 
+
+// const number = parseInt(prompt("Enter a number: "));
 
 
   
@@ -50,4 +62,6 @@ describe('Human', () => {
 //  3 male 73 / female 80 / father
 //  4 if else male and =>74 return years lived past life male life expectancy
 //  5 if female and => 80 ect...
-//  6 
+//  6 method to the class for the above 
+//  7 method to divide the users age 
+
