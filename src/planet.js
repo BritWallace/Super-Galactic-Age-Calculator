@@ -1,10 +1,16 @@
 
-export default function Human(age, gender) {
-  this.age = age;
-  this.gender = gender;
+export default class Human {
+  constructor(age, maxAge) {
+    this.age = age;
+    this.maxAge = maxAge;
+  // this.mercuryAge = mercuryAge;
+  }
+  toMercury() {
+    this.mercuryAge = (this.age / .24);
+    return this.mercuryAge;
+  }
 }
   
 
-// let humanInDays = (20 * 365)
-//     return (20 * 365);
-// 
+
+
