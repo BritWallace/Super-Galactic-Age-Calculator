@@ -29,5 +29,10 @@ describe('Human', () => {
     console.log(reusableHuman);
   })
 
+  test('should show earth human years in solar Mars years', () => {
+    expect(reusableHuman.toMars()).toEqual(20 / 1.88);
+    console.log(reusableHuman);
+  })
+
 });
 
