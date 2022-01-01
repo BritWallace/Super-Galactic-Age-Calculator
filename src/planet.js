@@ -9,6 +9,12 @@ export default class Human {
     this.mercuryAge = (this.age / .24);
     return this.mercuryAge;
   }
+  toVenus() {
+    this.venusAge = (this.age / .62);
+    return this.venusAge;
+  }
+
+
 }
   
 
