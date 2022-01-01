@@ -17,11 +17,17 @@ describe('Human', () => {
 
   }); 
 
-  test('should show earth years in solar Mercury years', () => {
+  test('should show earth human years in solar Mercury years', () => {
     expect(reusableHuman.toMercury()).toEqual(20 / .24);
     console.log(reusableHuman);
     console.log(reusableHuman.toMercury());
     console.log(reusableHuman.mercuryAge);
   })
+  
+  test('should show earth human years in solar Venus years', () => {
+    expect(reusableHuman.toVenus()).toEqual(20 / .62);
+    console.log(reusableHuman);
+  })
+
 });
 
