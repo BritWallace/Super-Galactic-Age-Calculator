@@ -38,5 +38,9 @@ describe('Human', () => {
     expect(reusableHuman.toJupiter()).toEqual(20 / 11.86);
   })
 
+  test('should show the years left to live on planet Mercury', () => {
+    expect(reusableHuman.toMercury()).toEqual(20 /.24) - (72);
+    })
+
 });
 
