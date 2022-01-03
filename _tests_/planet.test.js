@@ -26,12 +26,10 @@ describe('Human', () => {
   
   test('should show earth human years in solar Venus years', () => {
     expect(reusableHuman.toVenus()).toEqual(20 / .62);
-    console.log(reusableHuman);
   })
 
   test('should show earth human years in solar Mars years', () => {
     expect(reusableHuman.toMars()).toBe(20 / 1.88);
-    console.log(reusableHuman);
   })
 
   test('should show earth human years in solar Jupiter years', () => {
@@ -39,8 +37,18 @@ describe('Human', () => {
   })
 
   test('should show the years left to live on planet Mercury', () => {
-    expect(reusableHuman.toMercury()).toEqual(20 /.24) - (72);
+    expect(reusableHuman.toMercury()).toEqual((20 /.24) - (72 /.24));
+    console.log(reusableHuman);
     })
+
+  // test('should show how many bonus years lived past life expectancy on Mercury', () => {
+  //   expect(reusableHuman.toMercury()).toEqual.toMercury - (72 / .24);
+  //   console.log(reusableHuman);
+  // })   
 
 });
 
+// test('should show how many bonus years lived past life expectancy on Mercury', () => {
+//   expect(reusableHuman.toMercury());Math.abs((75 * .24) - (72 / .24));
+//   console.log(reusableHuman);
+// })   

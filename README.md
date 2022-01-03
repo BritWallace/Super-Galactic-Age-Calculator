@@ -27,7 +27,7 @@ This application will allow a user to input their age and get their age in sever
 
 ## Known Bugs
 
-* _None known at this time_
+* _Buggy with returning life expectancy on each planet. Buggy returning bonus years lived on each planet._
 
 
 ## License
