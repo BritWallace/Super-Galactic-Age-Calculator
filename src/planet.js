@@ -7,8 +7,15 @@ export default class Human {
   }
   toMercury() {
     this.mercuryAge = (this.age / .24);
-    return this.mercuryAge;
-  }
+    this.maxAge = (this.maxAge / .24);
+    if (this.mercuryAge >= (this.maxAge /.24)) {
+      this.yearsLeft = (this.maxAge / .24) - this.mercuryAge + "Years left to live.";
+    } else (this.mercuryAge <= (this.maxAge / .24)); {
+      this.yearsLeft = this.mercuryAge - this.maxAge +  "Bonus years lived so far!";
+    }
+    return this.yearsLeft;
+  };
+
   toVenus() {
     this.venusAge = (this.age / .62);
     return this.venusAge;
@@ -22,10 +29,7 @@ export default class Human {
     return this.jupiterAge;
   }
   // toMercury() {
-  //   if (this.mercuryAge >= this.maxAge)
-  //     return this.maxAge - this.mercuryAge + "Years left to live.";
-  //   } else if (this.mercuryAge <= this.maxAge) {
-  //       return this.mercuryAge - this.maxAge +  "Bonus years lived so far!";
+  
   // }
 }
   

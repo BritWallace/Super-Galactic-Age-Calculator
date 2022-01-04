@@ -17,11 +17,15 @@ describe('Human', () => {
 
   }); 
 
-  test('should show earth human years in solar Mercury years', () => {
-    expect(reusableHuman.toMercury()).toEqual(20 / .24);
+  test('should how Mercury age', () => {
+    reusableHuman.toMercury();
+    expect(reusableHuman.mercuryAge).toEqual(20 / .24);
+  });
+
+
+  test('should show how many bonus years lived past life expectancy on Mercury', () => {
+    expect(reusableHuman.toMercury());Math.abs((75 * .24) - (72 / .24));
     console.log(reusableHuman);
-    console.log(reusableHuman.toMercury());
-    console.log(reusableHuman.mercuryAge);
   })
   
   test('should show earth human years in solar Venus years', () => {
@@ -35,20 +39,25 @@ describe('Human', () => {
   test('should show earth human years in solar Jupiter years', () => {
     expect(reusableHuman.toJupiter()).toEqual(20 / 11.86);
   })
+  
+  
+})
 
-  test('should show the years left to live on planet Mercury', () => {
-    expect(reusableHuman.toMercury()).toEqual((20 /.24) - (72 /.24));
-    console.log(reusableHuman);
-    })
+
+
+// test('should show the years left to live on planet Mercury', () => {
+  //   expect(reusableHuman.toMercury()).toEqual((20 /.24) - (72 /.24));
+  //   console.log(reusableHuman);
+  //   })
 
   // test('should show how many bonus years lived past life expectancy on Mercury', () => {
   //   expect(reusableHuman.toMercury()).toEqual.toMercury - (72 / .24);
   //   console.log(reusableHuman);
   // })   
 
-});
 
-// test('should show how many bonus years lived past life expectancy on Mercury', () => {
-//   expect(reusableHuman.toMercury());Math.abs((75 * .24) - (72 / .24));
-//   console.log(reusableHuman);
-// })   
+
+
+ // test('should show average max life expectancy on Mercury', () => {
+  //   expect(reusableHuman.toMercury()).toEqual(72 / .24);
+  // })
