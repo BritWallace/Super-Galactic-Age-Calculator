@@ -23,6 +23,7 @@ This application will allow a user to input their age and get their age in sever
 * Open the project in your preferred location.
 * Open your terminal.
 * Run "npm install" followed by "npm run build."
+* Run "npm run test" to see the test results.
 
 
 ## Known Bugs

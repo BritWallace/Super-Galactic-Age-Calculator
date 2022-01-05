@@ -24,7 +24,8 @@ describe('Human', () => {
 
 
   test('should show how many bonus years lived past life expectancy on Mercury', () => {
-    expect(reusableHuman.toMercury());Math.abs((75 * .24) - (72 / .24));
+    let reusableHumanOverMax = new Human(75, 72);
+    expect(reusableHumanOverMax.toMercury()).toEqual(13);
     console.log(reusableHuman);
   })
   
@@ -40,9 +41,26 @@ describe('Human', () => {
     expect(reusableHuman.toJupiter()).toEqual(20 / 11.86);
   })
   
+  test('should show years left to live on Mercury', () => {
+    expect(reusableHuman.toMercury()).toEqual(217);
+  })
   
 })
 
+// Bad test
+// test('should show how many bonus years lived past life expectancy on Mercury', () => {
+//   expect(reusableHuman.toMercury());Math.abs((75 / .24) - (72 / .24));
+//   console.log(reusableHuman);
+// })
+
+// if (this.mercuryAge >= (this.maxAge /.24)) {
+//   this.yearsLeft = (this.maxAge / .24) - this.mercuryAge;
+
+
+// test('should show the bonus years lived so far on planet Mercury', () => {
+//   expect(reusableHuman.toMercury()).toEqual((20 /.24) - (72 /.24)) + ("Bonus years lived so far!");
+//   console.log(reusableHuman);
+//   })
 
 
 // test('should show the years left to live on planet Mercury', () => {

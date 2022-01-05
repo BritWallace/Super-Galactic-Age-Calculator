@@ -3,17 +3,18 @@ export default class Human {
   constructor(age, maxAge) {
     this.age = age;
     this.maxAge = maxAge;
-  // this.mercuryAge = mercuryAge;
   }
   toMercury() {
     this.mercuryAge = (this.age / .24);
-    this.maxAge = (this.maxAge / .24);
-    if (this.mercuryAge >= (this.maxAge /.24)) {
-      this.yearsLeft = (this.maxAge / .24) - this.mercuryAge + "Years left to live.";
+    console.log(this.mercuryAge)
+    this.maxAge = this.maxAge / .24;
+    if (this.mercuryAge >= this.maxAge) {
+      console.log(this.maxAge);
+      this.yearsLeft = (this.maxAge  - this.mercuryAge);
     } else (this.mercuryAge <= (this.maxAge / .24)); {
-      this.yearsLeft = this.mercuryAge - this.maxAge +  "Bonus years lived so far!";
+      this.yearsLeft = this.mercuryAge - this.maxAge;
     }
-    return this.yearsLeft;
+    return (Math.abs(Math.round(this.yearsLeft)));
   };
 
   toVenus() {
@@ -28,11 +29,12 @@ export default class Human {
     this.jupiterAge = (this.age / 11.86);
     return this.jupiterAge;
   }
-  // toMercury() {
-  
-  // }
+
 }
   
+// +  "Bonus years lived so far!"
+
+
 // toMercury() {
 //   this.mercuryAge = (this.age / .24);
 //   this.mercuryAge = math.abs(this.maxAge - this.age) / (.24);
