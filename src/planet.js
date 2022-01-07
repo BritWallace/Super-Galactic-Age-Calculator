@@ -6,10 +6,8 @@ export default class Human {
   }
   toMercury() {
     this.mercuryAge = (this.age / .24);
-    console.log(this.mercuryAge)
     this.maxAge = this.maxAge / .24;
     if (this.mercuryAge >= this.maxAge) {
-      console.log(this.maxAge);
       this.yearsLeft = (this.maxAge  - this.mercuryAge);
     } else (this.mercuryAge <= (this.maxAge / .24)); {
       this.yearsLeft = this.mercuryAge - this.maxAge;
@@ -19,8 +17,16 @@ export default class Human {
 
   toVenus() {
     this.venusAge = (this.age / .62);
-    return this.venusAge;
-  }
+    this.maxAge = this.maxAge / .62;
+    if (this.venusAge >= this.maxAge) {
+      this.yearsLeft = (this.maxAge  - this.venusAge);
+    } else (this.venusAge <= (this.maxAge / .62)); {
+      console.log(this.venusAge);
+      this.yearsLeft = this.venusAge - this.maxAge;
+    }
+    return (Math.abs(Math.round(this.yearsLeft)));
+  };
+
   toMars() {
     this.marsAge = (this.age / 1.88);
     return this.marsAge;
@@ -35,20 +41,19 @@ export default class Human {
 // +  "Bonus years lived so far!"
 
 
-// toMercury() {
-//   this.mercuryAge = (this.age / .24);
-//   this.mercuryAge = math.abs(this.maxAge - this.age) / (.24);
-//   if (this.maxAge >= this.age)
-//   return this.mercuryAge + ("" ) + ("Years left to live on Mercury.");
-// }
+// toVenus() {
+//   this.venusAge = (this.age / .62);
+//   this.maxAge = this.maxAge / .62;
+//   console.log(this.venusAge);
+//   if (this.venusAge >= this.maxAge) {
+//     this.yearsLeft = (this.maxAge  - this.venusAge);
+//   } else (this.venusAge <= (this.maxAge / .62)); {
+//     this.yearsLeft = this.venusAge - this.maxAge;
+//   }
+//   return (Math.abs(Math.round(this.yearsLeft)));
+// };
 
 
-// toMercury() {
-//   this.mercuryAge = math.abs(this.maxAge - this.age ) / (.24)
-//   if (this.maxAge >= this.age)
-//     return this.mercuryAge + "Years left to live.";
-//   } else {
-//     return this.mercuryAge + "Bonus years lived so far!";
-// }
+
 
 
