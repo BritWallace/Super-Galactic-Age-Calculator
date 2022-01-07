@@ -32,11 +32,14 @@ describe('Human', () => {
   })
   
   test('should show earth human years in solar Venus years', () => {
-    expect(reusableHuman.toVenus()).toEqual(84);
+    reusableHuman.toVenus();
+    expect(reusableHuman.venusAge).toEqual(20 / .62);
+    console.log(reusableHuman.toVenus());
   })
 
   test('should show earth human years in solar Mars years', () => {
-    expect(reusableHuman.toMars()).toBe(20 / 1.88);
+    reusableHuman.toMars();
+    expect(reusableHuman.marsAge).toBe(20 / 1.88);
   })
 
   test('should show earth human years in solar Jupiter years', () => {
@@ -56,8 +59,8 @@ describe('Human', () => {
 
   test('should show how many bonus years lived past life expectancy on Mars', () => {
     let reusableHumanOverMax = new Human(75, 72);
-    expect(reusableHumanOverMax.toMars()).toEqual(40);
-    console.log(reusableHuman);
+    expect(reusableHumanOverMax.toMars()).toEqual(2);
+    console.log(reusableHumanOverMax);
   
   })
 
