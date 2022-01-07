@@ -43,7 +43,8 @@ describe('Human', () => {
   })
 
   test('should show earth human years in solar Jupiter years', () => {
-    expect(reusableHuman.toJupiter()).toEqual(20 / 11.86);
+    reusableHuman.toJupiter();
+    expect(reusableHuman.jupiterAge).toEqual(20 / 11.86);
   })
   
   test('should show years left to live on Mercury', () => {
@@ -64,5 +65,10 @@ describe('Human', () => {
   
   })
 
+  test('should show how many bonus years lived past life expectancy on Jupiter', () => {
+    let reusableHumanOverMax = new Human(75, 72);
+    expect(reusableHumanOverMax.toJupiter()).toEqual(6);
+    console.log(reusableHumanOverMax);
 
+  })
 })
