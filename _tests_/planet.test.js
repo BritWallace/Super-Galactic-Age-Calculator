@@ -2,9 +2,11 @@ import Human from '../src/planet.js'
 
 describe('Human', () => {
   let reusableHuman;
+  let reusableHumanOverMax;
 
   beforeEach(() => {
     reusableHuman = new Human(20, 72);
+    reusableHumanOverMax = new Human(75);
   
   });
 
@@ -44,7 +46,13 @@ describe('Human', () => {
   test('should show years left to live on Mercury', () => {
     expect(reusableHuman.toMercury()).toEqual(217);
   })
+
+  test('should show how many bonus years lived past life expectancy on Venus', () => {
+    let reusableHumanOverMax = new Human(75, 72);
+    expect(reusableHumanOverMax.toVenus()).toEqual(121);
+    console.log(reusableHuman);
   
+  })
 })
 
 // Bad test
