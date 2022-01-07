@@ -32,7 +32,7 @@ describe('Human', () => {
   })
   
   test('should show earth human years in solar Venus years', () => {
-    expect(reusableHuman.toVenus()).toEqual(20 / .62);
+    expect(reusableHuman.toVenus()).toEqual(84);
   })
 
   test('should show earth human years in solar Mars years', () => {
@@ -49,41 +49,17 @@ describe('Human', () => {
 
   test('should show how many bonus years lived past life expectancy on Venus', () => {
     let reusableHumanOverMax = new Human(75, 72);
-    expect(reusableHumanOverMax.toVenus()).toEqual(121);
+    expect(reusableHumanOverMax.toVenus()).toEqual(5);
     console.log(reusableHuman);
   
   })
+
+  test('should show how many bonus years lived past life expectancy on Mars', () => {
+    let reusableHumanOverMax = new Human(75, 72);
+    expect(reusableHumanOverMax.toMars()).toEqual(40);
+    console.log(reusableHuman);
+  
+  })
+
+
 })
-
-// Bad test
-// test('should show how many bonus years lived past life expectancy on Mercury', () => {
-//   expect(reusableHuman.toMercury());Math.abs((75 / .24) - (72 / .24));
-//   console.log(reusableHuman);
-// })
-
-// if (this.mercuryAge >= (this.maxAge /.24)) {
-//   this.yearsLeft = (this.maxAge / .24) - this.mercuryAge;
-
-
-// test('should show the bonus years lived so far on planet Mercury', () => {
-//   expect(reusableHuman.toMercury()).toEqual((20 /.24) - (72 /.24)) + ("Bonus years lived so far!");
-//   console.log(reusableHuman);
-//   })
-
-
-// test('should show the years left to live on planet Mercury', () => {
-  //   expect(reusableHuman.toMercury()).toEqual((20 /.24) - (72 /.24));
-  //   console.log(reusableHuman);
-  //   })
-
-  // test('should show how many bonus years lived past life expectancy on Mercury', () => {
-  //   expect(reusableHuman.toMercury()).toEqual.toMercury - (72 / .24);
-  //   console.log(reusableHuman);
-  // })   
-
-
-
-
- // test('should show average max life expectancy on Mercury', () => {
-  //   expect(reusableHuman.toMercury()).toEqual(72 / .24);
-  // })
