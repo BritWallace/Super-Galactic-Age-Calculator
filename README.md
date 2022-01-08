@@ -2,20 +2,20 @@
 
 #### By _**Brit Wallace**_
 
-#### _An Epicodus Project involving Test Driven Development _
+#### An Epicodus Project involving Test Driven Development 
 
 ## Technologies Used
 
 * _HTML_
 * _CSS & Bootstrap_
 * _Javascript & jQuery_
-* _Node Package
+* Node Package
 * _Jest_
 * _Webpack_
 
 ## Description
 
-This application will allow a user to input their age and get their age in several different solar years in return.  If they have lived past the average life expectancy, then it will return how many years they have surpassed that average age or it will show the user how many years left to live on each planet.
+This application will allow a user to input their age and get their age in several different solar years in return.  If they have lived past the average life expectancy, then it will return how many years they have surpassed that average age or it will show the user how many years left to live on each solar cycle. 
 
 ## Setup/Installation Requirements
 
@@ -28,7 +28,7 @@ This application will allow a user to input their age and get their age in sever
 
 ## Known Bugs
 
-* _Buggy with returning life expectancy on each planet. Buggy returning bonus years lived on each planet._
+* _No known bugs at this time._
 
 
 ## License

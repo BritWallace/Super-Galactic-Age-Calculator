@@ -11,7 +11,6 @@ describe('Human', () => {
   });
 
   test('should show how beforeEach() works', () => {
-    console.log(reusableHuman);
   });
 
   test('should see a users age and expected life expectancy', () => {
@@ -28,13 +27,11 @@ describe('Human', () => {
   test('should show how many bonus years lived past life expectancy on Mercury', () => {
     let reusableHumanOverMax = new Human(75, 72);
     expect(reusableHumanOverMax.toMercury()).toEqual(13);
-    console.log(reusableHuman);
   })
   
   test('should show earth human years in solar Venus years', () => {
     reusableHuman.toVenus();
     expect(reusableHuman.venusAge).toEqual(20 / .62);
-    console.log(reusableHuman.toVenus());
   })
 
   test('should show earth human years in solar Mars years', () => {
@@ -54,20 +51,17 @@ describe('Human', () => {
   test('should show how many bonus years lived past life expectancy on Venus', () => {
     let reusableHumanOverMax = new Human(75, 72);
     expect(reusableHumanOverMax.toVenus()).toEqual(5);
-    console.log(reusableHuman);
-  
   })
 
   test('should show how many bonus years lived past life expectancy on Mars', () => {
     let reusableHumanOverMax = new Human(75, 72);
     expect(reusableHumanOverMax.toMars()).toEqual(2);
     console.log(reusableHumanOverMax);
-  
   })
 
   test('should show how many bonus years lived past life expectancy on Jupiter', () => {
     let reusableHumanOverMax = new Human(75, 72);
-    expect(reusableHumanOverMax.toJupiter()).toEqual(6);
+    expect(reusableHumanOverMax.toJupiter()).toEqual(0);
     console.log(reusableHumanOverMax);
 
   })

@@ -21,7 +21,6 @@ export default class Human {
     if (this.venusAge >= this.maxAge) {
       this.yearsLeft = (this.maxAge  - this.venusAge);
     } else (this.venusAge <= (this.maxAge / .62)); {
-      console.log(this.venusAge);
       this.yearsLeft = this.venusAge - this.maxAge;
     }
     return (Math.abs(Math.round(this.yearsLeft)));
@@ -38,12 +37,28 @@ export default class Human {
     return (Math.abs(Math.round(this.yearsLeft)));
   };
     
+  // toJupiter() {
+  //   this.jupiterAge = (this.age / 11.86);
+  //   this.maxAge = this.maxAge / 11.86;
+  //   if (this.jupiterAge >= this.maxAge) {
+      // this.yearsLeft = (this.maxAge - this.jupiterAge);
+    // } else (this.jupiterAge <= this.maxAge); {
+    //   this.yearsLeft = this.jupiterAge - this.maxAge;
+    // }
+  //  
+  
   toJupiter() {
     this.jupiterAge = (this.age / 11.86);
-    return this.jupiterAge;
-  }
+    this.maxAge = this.maxAge / 11.86;
+    if (this.jupiterAge >= this.maxAge) {
+      this.yearsLeft = (this.maxAge - this.jupiterAge);
+    }
+    return (Math.abs(Math.round(this.yearsLeft)));
+  };
+};
 
-}
+
+
   
 // +  "Bonus years lived so far!"
 
